@@ -15,27 +15,16 @@ import subprocess
 import time
 import shutil
 
-# if not load_dotenv():
-#     print("Could not load .env file or it is empty. Please check if it exists and is readable.")
-#     exit(1)
-
-#embeddings_model_name = os.environ.get("EMBEDDINGS_MODEL_NAME")
-#persist_directory = os.environ.get('PERSIST_DIRECTORY')
-
-# model_type = os.environ.get('MODEL_TYPE')
-# model_path = os.environ.get('MODEL_PATH')
-# model_n_ctx = os.environ.get('MODEL_N_CTX')
-# model_n_batch = int(os.environ.get('MODEL_N_BATCH',8))
-# target_source_chunks = int(os.environ.get('TARGET_SOURCE_CHUNKS',4))
-
-# # Added a paramater for GPU layer numbers
-# n_gpu_layers = os.environ.get('N_GPU_LAYERS')
+#if "GPU" not in st.session_state:
+#	# Added a paramater for GPU layer numbers
+#	n_gpu_layers = os.environ.get('N_GPU_LAYERS')
 #
-# # Added custom directory path for CUDA dynamic library
-# os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/bin")
-# os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/extras/CUPTI/lib64")
-# os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/include")
-# os.add_dll_directory("C:/tools/cuda/bin")
+#	# Added custom directory path for CUDA dynamic library
+#	os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/bin")
+#	os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/extras/CUPTI/lib64")
+#	os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/include")
+#	os.add_dll_directory("C:/tools/cuda/bin")
+#	st.session_state["GPU"]=1
 
 from constants import CHROMA_SETTINGS
 
